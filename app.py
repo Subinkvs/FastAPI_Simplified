@@ -43,6 +43,7 @@ def get_items():
     return {"items": items}
 
 
+
 @app.put("/updateitems/{index}")
 async def update_items(index: int, request: Request):
     """
@@ -76,7 +77,6 @@ async def update_items(index: int, request: Request):
 async def delete_items(index: int):
     """
     🗑️ Delete an item from the list by its index.
-
     - Path Parameter: index (int) → Position of the item to remove.
     - Removes the item and returns a success message.
 
