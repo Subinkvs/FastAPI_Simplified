@@ -17,7 +17,7 @@ async def add_items(request: Request):
 
     Example Request Body:
     {
-        "item": "Apple"
+        "item": "Apple"   
     }
     """
     # Read JSON data from the request body asynchronously
